@@ -1,0 +1,81 @@
+.reservations-section {
+  background-color: transparent;
+}
+
+.reservations-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 50px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+}
+
+.reservations-subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-muted);
+}
+
+.reservations-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: var(--transition);
+  background: #fff;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .reservations-container {
+    padding: 26px 18px;
+  }
+}
